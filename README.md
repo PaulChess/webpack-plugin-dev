@@ -1,5 +1,8 @@
 # webpack-plugin-dev
-webpack插件开发
+<p align="center">
+  <!-- <p>webpack插件开发</p> -->
+  <img src="https://pic3.zhimg.com/v2-9f6f0ebb1b09356bbb5f0d0a48ac39de_ipico.jpg" width="250">
+</p>
 
 ## webpack核心概念
 1. 入口Entry: Webpack 执行构建的第一步将从 Entry 开始，可抽象成输入
@@ -7,6 +10,14 @@ webpack插件开发
 3. 代码块Chunk: 一个 Chunk 由多个模块组合而成，用于代码合并与分割
 4. 加载器Loader: 用于把模块原内容按照需求转换成新内容。
 5. 插件Plugin: Webpack 构建流程中的特定时机会广播出对应的事件，插件可以监听这些事件的发生，在特定时机做对应的事情。
+
+## webpack构建三大流程
+1. 初始化
+2. 编译
+3. 输出
+   
+这三大流程中暴露了很多的事件钩子，从一定角度反映了构建的具体流程。
+[参考链接](http://webpack.wuhaolin.cn/5%E5%8E%9F%E7%90%86/5-1%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E6%A6%82%E6%8B%AC.html)。目标: 熟记!
 
 ## webpack插件编写步骤
 一个 webpack plugin 基本包含以下几步：
